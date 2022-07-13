@@ -67,7 +67,24 @@
 			"name": "Get_Product_By_ID",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"5",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -78,7 +95,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"title\": \"Razer x Basilisk Mouse\",\r\n\"description\": \"A Razer Mouse w/ Bluetooth Adapter\",\r\n\"price\": 40.0,\r\n\"inventory_quantity\": 30\r\n}",
+					"raw": "{\r\n\"title\": \"Razer x Basilisk Mouse\",\r\n\"description\": \"A Razer Mouse w/ Bluetooth Adapter\",\r\n\"price\": 40.0,\r\n\"inventory_quantity\": 30,\r\n\"image_link\": \"https://www.google.com/search?q=razer+x+basilisk+hyperspeed&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjOkbKztPb4AhU0j4kEHTWvBygQ_AUoAnoECAIQBA&biw=1745&bih=881&dpr=1.1#imgrc=hPVV6x_0-MU3LM\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
