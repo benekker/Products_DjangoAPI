@@ -31,7 +31,7 @@ def review_detail(request, pk):
         serializer = ReviewSerializer(review, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.data)
     elif request.method == DELETE:
         review.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
